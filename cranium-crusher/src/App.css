@@ -1,0 +1,56 @@
+h1 {
+  margin: 10px;
+  text-decoration: underline;
+}
+
+.card {
+  display: flex;
+  flex-direction: row !important;
+  margin: 10px auto;
+  flex-wrap: wrap;
+}
+
+.card img {
+  max-width: 200px;
+  width: 98%;
+  margin: 1% auto;
+}
+
+.card p {
+  display: inline-block;
+  margin: auto 10px;
+}
+
+.cardbody {
+  text-align: center;
+}
+
+.editbutton {
+  float: right;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .mr-auto {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mr-auto {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
